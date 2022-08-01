@@ -1,0 +1,59 @@
+<%@ page language="java"  import="java.util.*"  contentType="text/html; charset=UTF-8"
+
+    pageEncoding="UTF-8"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+
+<head>
+
+  
+
+<!-- 完成页面定时的跳转 -->
+
+<meta http-equiv="refresh" content="5;url=/Web_01/main.html">
+
+  
+
+<title>Insert title here</title>
+
+</head>
+
+<body onload="run()">
+
+   页面将在<span id="spanId">5</span>秒后跳转！！
+
+</body>
+
+<br>
+
+<script type="text/javascript">
+
+    // 页面一加载完成，该方法就会执行
+
+    // 读秒，一秒钟数字改变一次
+
+    var x = 5;
+
+    function run(){
+
+        // 获取到的是span标签的对象
+
+        var span = document.getElementById("spanId");
+
+        // 获取span标签中间的文本
+
+        span.innerHTML = x;
+
+        x--;
+
+        // 再让run方法执行呢，一秒钟执行一次
+
+        window.setTimeout("run()", 1000);
+
+    }
+
+</script>
+
+</html>
