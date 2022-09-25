@@ -1,79 +1,10 @@
 <!DOCTYPE html>
- 
 <html>
-
 <head>
- 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-
-<!-- 完成页面定时的跳转 -->
-
-<meta http-equiv="refresh" content="3;url=tom.html">
-
-<title>汤姆盒子官网跳转站</title>
-<style>
-  .text {
-    text-align: center;
-    font-size: 15px;
-    line-height: 2;
-    color: #000;
-    font-weight: bold;
-  }
-  .multiple-text-shadow {
-    text-shadow: 0 0 4px #fff,
-    0 0 4px #fff,
-    0 0 4px #fff,
-    0 0 4px #fff,
-    0 0 4px #fff,
-    0 0 4px #fff,
-    0 0 4px #fff;
-  }
-</style>
-
+<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>汤姆随机一言</title>
 </head>
-
-<style>
-    button{color:dodgerblue;}
-</style>
-
-<body onload="run()">
-
-<div class="multiple-text-shadow text">
-我们将在<span id="spanId">3</span>秒后为您跳转至汤姆盒子官方网站！</div><br>
-<div style="text-align:center">
-<button onclick="window.location.href='https://dark-tom.github.io/tom.html'">直接前往！</button>
-</div>
-
+<body> 
+<script type="text/javascript" src="yiyan.php"></script>
 </body>
-
-<br>
-
-<script type="text/javascript">
-
-    // 页面一加载完成，该方法就会执行
-
-    // 读秒，一秒钟数字改变一次
-
-    var x = 3;
-
-    function run(){
-
-        // 获取到的是span标签的对象
-
-        var span = document.getElementById("spanId");
-
-        // 获取span标签中间的文本
-
-        span.innerHTML = x;
-
-        x--;
-
-        // 再让run方法执行呢，一秒钟执行一次
-
-        window.setTimeout("run()", 1000);
-
-    }
-
-</script>
-
 </html>
